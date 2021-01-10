@@ -7,6 +7,10 @@ body{
     font-family: 'Baloo Bhaina 2', cursive;
     line-height: 1.5;
 }
+.tittle-text {
+    font-size: 40px;
+    text-align: center;
+}
 /*==HEADER==*/
 .header {
     min-height: 100vh;
@@ -62,3 +66,135 @@ body{
     }
 
 }
+/*--------------------------------end of HEADER----------------------------*/
+/*==========ABOUT====*/
+#about{
+    padding:40px;
+}
+.about{
+    margin: 30px 0;
+    display: flex;
+}
+.about-icon .fas{
+     font-size: 60px;
+     color: orange;
+     margin-right: 25px;
+}
+.about .about-subtitle{
+    text-transform: capitalize;
+    color: orange;
+    font-size: 25px;
+}
+.about-info{
+    margin-top:10px;
+    line-height:1.5;
+    color:blueviolet;
+}
+.about-icon:hover .fas,
+.about-subtitle:hover{
+        transition: transform 2s ease,color 2s ease;
+        transform: translate( 10px, -10px);
+        color: orange;
+        cursor: pointer;
+}
+@media screen and (min-width: 480px) {
+    .about-center{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .about{
+        flex:0 0 calc(50% - 16px);
+    }
+}
+@media screen and (min-width:972px) {
+    .about{
+        flex: 0 0 calc(30.3% - 16px);
+    }
+}
+.menu-image{
+    min-height : 80vh;
+    background:url(./img/food.jpg)
+}
+.menu-text{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    background-color:orange;
+    columns: #0000;
+    padding:40px 0;
+
+}
+.menu-text-center{
+    width: 90px;
+    margin: 0 auto;
+
+}
+.menu-text h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+}
+.menu-text p{
+    margin: 20px 0;
+    line-height: 2;
+
+}
+.menu-text a{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding:13px 200px;
+    font-weight: bold;
+    background:rgb(18,10,10);
+    color:orange;
+    cursor: pointer;
+    border: 2px solid #000;
+    margin:-top:10px ;
+
+
+}
+.menu-text a:hover{
+    color:orange;
+    background:#fff;
+    border: none;
+}
+@media screen and (min-width: 776px){
+    .menu{
+        display: flex;
+
+    }
+    .menu-text{
+        flex: 0 0 30%;
+
+    }
+    .menu-image{
+        flex: 0 0 70%;
+
+    }
+    clip-path: polygon(0 0, 100% 0, 50% 100%, 0 100%),
+    }
+}
+.menu{
+    background:orange;
+}
+#social-icon{
+    height: 150px;
+    background:#fff;
+    text-align: center;
+    padding:50px 0 50px 0;
+}
+#social-icon a{
+    display: inline-block;
+    padding:5px 10px;
+    margin: 0 5px;
+    font-size: 40px;
+    border-radius: 5px;
+    transition: transform 2s ease,color 2s easse;
+}
+#social-icon a:hover{
+    transform: translateY(-20px);
+}
+
+    
