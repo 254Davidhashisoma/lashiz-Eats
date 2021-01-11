@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYP html>
 <html lang="en">
 
 <head>
@@ -25,6 +25,143 @@
     </header>
     <section id="about">
         <div>
+            <div id="menus"></div>
+            <br>
+            <div class="menu col-md-12">
+                <div class="menu-overlay">
+                    
+                    <a href="#Menu"><h1 class="text-center text-white" id="menu">Menu</h1></a>
+                    <div class="piza-menu row text-center">
+                        <figure class="col-sm-4">
+                            <img src="./img/small 1.png" alt="small-pizza" class="wiggle">
+                            <figcaption class="text-white">Regular<br>Ksh 600</figcaption>
+                        </figure>
+                        <figure class="col-sm-4">
+                            <img src="./img/Maddy.png" alt="medium-pizza" class="wiggle">
+                            <figcaption class="text-white">Medium<br>Ksh 900</figcaption>
+                        </figure>
+                        <figure class="col-sm-4">
+                            <img src="./img/Maddog-.png" alt="large-pizza" class="wiggle">
+                            <figcaption class="text-white">Large<br>Ksh 1200</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--js content -->
+            <div class="orders" id="order">
+                <h1 class="text-center" id="order-pizza">Order Pizza</h1>
+                <div class="form-group row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-8 order-overlay text-center">
+                        <form class="col-sm-6 offset-sm-3 text-center">
+                            <label>Choose your Preferred Pizza Flavour:</label>
+                            <select class="custom-select custom-select-md mb-3 flavour" required>
+                                <option value="chickenhawaiian">Chicken Hawaiian</option>
+                                <option value="meatdeluxe">Meat Deluxe</option>
+                                <option value="spicyboerewors">Spicy Boerewors</option>
+                                <option value="beefpepperoni">Beef Pepperoni Plus</option>
+                                <option value="bbqsteak">BBQ Steak</option>
+                                <option value="chickenmushroom">Chicken & Mushroom</option>
+                                <option value="vegfeast">Veg Feast</option>
+                                <option value="chickenmacon">Chicken Macon BBQ</option>
+                            </select>
+                            <label>Choose your satisfactory size:</label>
+                            <select class="custom-select custom-select-md mb-3" id="size" required>
+                                <option value="regular">Regular</option>
+                                <option value="medium">Medium</option>
+                                <option value="large">Large</option>
+                            </select>
+                            <label for="crust">Choose your favourite crust:</label>
+                            <select class="custom-select custom-select-md mb-3" id="crust" required>
+                                <option value="thin">Thin Crust @ Ksh.150</option>
+                                <option value="thick">Thick Crust @ Ksh. 250</option>
+                                <option value="flatbread">Flat Bread Crust @ Ksh. 280</option>
+                                <option value="custom">Custom Crust @ Ksh. 300</option>
+                            </select>
+                            <label>Choose your Favorite Preferred Toppings:</label>
+                            <select class="custom-select custom-select-md mb-3" id="toppings" required>
+                                <option value="tomato">Tomato @ Ksh. 80</option>
+                                <option value="mushroom">Mushroom @ Ksh. 80</option>
+                                <option value="veggiesalad"> Veggie Salad @ Ksh. 80</option>
+                                <option value="greenpepper"> Green Pepper @ Ksh. 80</option>
+                                <option value=""></option>
+                                <option value="olives">Olives @ Ksh. 120</option>
+                                <option value="pineapple">Pineapple @ Ksh. 120</option>
+                                <option value="macon">Macon @ Ksh. 120</option>
+                                <option value="mince">Mince @ Ksh. 120</option>
+                                <option value=""></option>
+                                <option value="beef">Beef Pepperoni @ Ksh. 180</option>
+                                <option value="chicken">Periperi Chicken @ Ksh. 180</option>
+                            </select>
+                            <label for="number">Number of Pizza's:</label>
+                            <input type="number" class="form-control" id="number" placeholder="Pizza's Quantity" min="1"
+                                required>
+                        </form>
+                        <a href="#summary">
+                            <button type="submit" class="btn btn-success checkout" id="checkout"> Checkout </button>
+                        </a>
+                    </div>
+                    <div class="col-sm-2"></div>
+                </div>
+            </div>
+
+            <div class="order-summary" id="sum-order">
+                <h1 class="text-center" id="summary">Order Summary</h1>
+                <h2 class="text-center summary">Haujambo! Your order is as follows:</h2>
+                <ol id="list" class="text-center sum"></ol>
+
+                <div class="cdata-overlay">
+                    <div class="customerdata row">
+                        <div class="col-sm-3"></div>
+                        <form action="" class="form-group col-sm-6 data">
+                            <input type="text" class="form-control cdata" placeholder="Enter your Name:">
+                            <input type="text" class="form-control cdata" placeholder="Enter your mobile number:">
+                            <input type="text" class="form-control cdata" placeholder="Enter your location:">
+                            <button class="btn bg-info text-center d-block mx-auto go">Make Delivery</button>
+                        </form>
+                        <div class="col-sm-3"></div>
+                    </div>
+                </div>
+                <div class="d-block mx-auto text-center">
+                    <button class='deliver'>Make Delivery</button>
+                    <button class='delivernot'>Pick Up</button>
+                </div>
+            </div>
+
+            <div class="contacts">
+                <div class="contact-overlay">
+                    <h1 class="text-center contact text-black" id="contacts">Contacts:</h1>
+                    <div class="row">
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-5 subs">
+                            <h1 class="text-black text-center">Contact Us</h1>
+                            <p class="text-center">+254 543 9123 4567</p>
+                            <form>
+                                <div class="email-info">
+                                    <div class="form-group fill-all-form">
+                                        <input type="text" class="form-control bg-transparent text"
+                                            placeholder="Enter Name">
+                                        <input type="email" class="form-control bg-transparent email" id="email"
+                                            placeholder="Email" required>
+                                        <textarea name="" id="" cols="10" rows="5"
+                                            placeholder="Message (optional)"></textarea>
+                                    </div>
+                                </div>
+                                <div class="email-info text-center">
+                                    <button class="btn click-me" onclick="subscribe();">Subscribe</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-sm-5">
+                            <h4 class="text-center get-pizza">We would love to hear from you. Send us feedback through
+                                an Email</h4>
+                        </div>
+                        <div class="col-sm-1"></div>
+                    </div>
+                </div>
+            </div>
             <h2 class="tittle-text">About Us</h2>
             <div class="about-center">
                 <!--start of the arcticle-->
@@ -107,20 +244,20 @@
     <section class="menu">
         <article class="menu-image"></article>
         <article class="menu-text">
-         <div class="menu-text-center">
-          <h1>Our Menu</h1>
-          <p>huhu jnui hoih jnijing</p> 
-          <a href="#">Explore</a> 
-         </div>
-         </article>       
+            <div class="menu-text-center">
+                <h1>Our Menu</h1>
+                <p>huhu jnui hoih jnijing</p>
+                <a href="#">Explore</a>
+            </div>
+        </article>
     </section>
-<!----social-icon------>
-<section id="social-icon">
-    <a href="#"><i class="fab fa-facebook"></i></a>
-    <a href="#"><i class="fab fa-twitter"></i></a>
-    <a href="#"><i class="fab fa-instagram instagram"></i></a>
-    <a href="#"><i class="fab fa-google-plus plus"></i></a>
-</section>
+    <!----social-icon------>
+    <section id="social-icon">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram instagram"></i></a>
+        <a href="#"><i class="fab fa-google-plus plus"></i></a>
+    </section>
 </body>
 
 </html>

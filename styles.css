@@ -196,5 +196,25 @@ body{
 #social-icon a:hover{
     transform: translateY(-20px);
 }
+.click-me, button[type=submit], .deliver, .delivernot {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: 2px;
+    background-color: #ffbf00;
+    outline: none;
+    padding: 12.5px 13px;
+    border: none;
+    border-radius: 33px;
+    font-size: 14px;
+}
+@media screen and (max-width:480px) and (min-width:720px){
+    html,
+    body,
+    header,{
+        height: 180px;
+    }
+}
 
     
