@@ -300,5 +300,10 @@ figure img{
     transform: translate( 20px, -10px);
     color: rgb(17, 17, 16);
 }
-
+h1{
+    font-size:50;
+}
+h1 span{
+    color: rgb(156, 16, 16);
+}
     
