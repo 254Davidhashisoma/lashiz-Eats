@@ -152,8 +152,6 @@ body{
     cursor: pointer;
     border: 2px solid #000;
     margin:-top:10px ;
-
-
 }
 .menu-text a:hover{
     color:orange;
@@ -209,12 +207,98 @@ body{
     border-radius: 33px;
     font-size: 14px;
 }
-@media screen and (max-width:480px) and (min-width:720px){
+@media screen and (max-width:992px) and (min-width:720px){
     html,
     body,
     header,{
         height: 180px;
     }
+}
+.menu-overlay{
+    height: inherit;
+    width: inherit;
+}
+#order-pizza{
+    color: white;
+    padding: 20px 50px 20px 50px;
+}
+.order-overlay{
+    height: inherit;
+    padding: 20px;
+    border-radius: 20px;
+}
+.checkout{
+    border-radius: 20px;
+    margin-top:20px;
+}
+.orders{
+    background-color: #dbc98f;
+}
+.order-summary{
+    color: white;
+}
+.order-summary h2{
+    font-style: italic bold;
+    font-size: 20px;
+}
+.order-summary h1, .summary{
+    color: white;
+    margin-top: 30px;
+}
+.contacts{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 30px;
+    color: black;
+}
+.contact-overlay{
+    height: inherit;
+}
+.contacts h1{
+    color: black;
+}
+input[type="text"]{
+    background: transparent;
+    border: 1px solid #ffffff;
+    padding: .8em .7em;
+    border-radius: 20px;
+    outline: none !important;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+input[type="email"]{
+    background: transparent;
+    border: 1px solid #a08f8f;
+    padding: .8em .8em;
+    border-radius: 20px;
+    outline: none !important;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.contact {
+    padding-top: 20px;
+}
+#menu{
+    padding-top: 20px;
+}
+.menu-btn{
+    border-radius: 20px;
+    margin-top: 20px;
+    color: #020402;
+}
+figure img{
+    height: 260px;
+    width: 260px;
+}
+.menu{
+    background-color: #f8f8f8;
+    background-image: url(".");
+    padding: 0;
+    margin-top: -20px;
+    transition: transform 3s ease,color 3s ease;
+    transform: translate( 20px, -10px);
+    color: rgb(17, 17, 16);
 }
 
     
