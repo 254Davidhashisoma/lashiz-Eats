@@ -302,7 +302,9 @@ figure img{
 }
 h1{
     font-size:60;
-    font: normal}
+    font: normal;
+    color:orange;
+}
 h1 span{
     color: rgb(156, 16, 16);
     font-size: 60;
