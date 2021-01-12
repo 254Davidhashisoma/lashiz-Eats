@@ -1,6 +1,6 @@
-# lashiz-Eats
+#### lashiz-Eats
 ## Author
-# David Hashisoma Munywere
+### David Hashisoma Munywere
 
 # Technologies Used
 HTML5
