@@ -301,9 +301,10 @@ figure img{
     color: rgb(17, 17, 16);
 }
 h1{
-    font-size:50;
-}
+    font-size:60;
+    font: normal}
 h1 span{
     color: rgb(156, 16, 16);
+    font-size: 60;
 }
     
